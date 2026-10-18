@@ -1,5 +1,5 @@
-// ===== API BASE URL =====
-   const API = 'https://bms-ebgr.onrender.com/api';
+
+const API = 'https://bms-ebgr.onrender.com/api';
 
 // ===== GENERIC FETCH HELPERS =====
 async function apiGet(endpoint) {
