@@ -713,3 +713,32 @@ img { max-width: 100%; display: block; }
 @media (max-width: 480px) {
     .grid-3, .grid-4 { grid-template-columns: 1fr; }
 }
+
+/* ===== MOBILE FIXES (navbar wrap, scrollable tables/tabs, no sideways scroll) ===== */
+html, body { overflow-x: hidden; }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0.6rem 1rem;
+        row-gap: 0.4rem;
+    }
+    .navbar .logo { font-size: 1.3rem; }
+    .nav-user { margin-left: auto; }
+    .nav-links {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 0.25rem;
+        padding-bottom: 0.2rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    .nav-links a { flex: 0 0 auto; }
+
+    .tabs { overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+    .tab { flex: 0 0 auto; }
+
+    .data-table { display: block; overflow-x: auto; white-space: nowrap; }
+}

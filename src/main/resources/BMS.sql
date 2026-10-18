@@ -3,7 +3,7 @@
 -- =============================================
 
 #drop database bms;
-use bms;
+use defaultdb;
 -- 1. Cities
 INSERT INTO cities (name, state) VALUES ('Mumbai', 'Maharashtra');
 INSERT INTO cities (name, state) VALUES ('Delhi', 'Delhi');
