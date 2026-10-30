@@ -106,6 +106,10 @@ Developed backend REST APIs to support movie, show, seat availability, booking, 
 - MySQL
 - Maven
 - Git
+## 📸 Screenshots
+<img width="1891" height="917" alt="image" src="https://github.com/user-attachments/assets/000a2fc6-1036-437d-b3d8-ba4da7f55985" />
+<img width="1900" height="897" alt="image" src="https://github.com/user-attachments/assets/ca07d4e1-27fb-46d3-8ded-8d634f905f0c" />
+<img width="1867" height="892" alt="image" src="https://github.com/user-attachments/assets/eef057bb-c350-44e1-9885-d912df74dd6e" />
 
 ### 1. Clone the repository
 
