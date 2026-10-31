@@ -77,6 +77,15 @@
                     <input type="date" id="movie-release">
                 </div>
             </div>
+
+            <!-- Movie Poster URL -->
+            <div class="form-group" style="margin-bottom:1rem;">
+                <label>Poster Image URL</label>
+                <input type="url" id="movie-poster"
+                       placeholder="Paste direct movie poster image URL">
+            </div>
+
+            <!-- Movie Description -->
             <div class="form-group" style="margin-bottom:1rem;">
                 <label>Description</label>
                 <input type="text" id="movie-desc" placeholder="Short description">
@@ -262,6 +271,7 @@
                 language: document.getElementById('movie-language').value.trim(),
                 durationMinutes: parseInt(document.getElementById('movie-duration').value) || null,
                 rating: parseFloat(document.getElementById('movie-rating').value) || null,
+                posterUrl: document.getElementById('movie-poster').value.trim() || null,
                 releaseDate: document.getElementById('movie-release').value || null,
                 description: document.getElementById('movie-desc').value.trim()
             };
@@ -269,7 +279,7 @@
             try {
                 await MovieAPI.add(data);
                 showToast('Movie added!', 'success');
-                ['movie-title','movie-genre','movie-language','movie-duration','movie-rating','movie-release','movie-desc']
+                ['movie-title','movie-genre','movie-language','movie-duration','movie-rating','movie-poster','movie-release','movie-desc']
                     .forEach(id => document.getElementById(id).value = '');
                 loadMovies();
             } catch (e) { showToast(e.message, 'error'); }
