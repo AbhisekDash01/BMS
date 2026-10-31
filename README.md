@@ -64,7 +64,12 @@ The database design supports:
 - Relationships between application entities.
 
   
-## 📸 Screenshots 
+## 📸 Screenshots
+<img width="1887" height="957" alt="Screenshot 2026-10-31 144501" src="https://github.com/user-attachments/assets/b2441b9e-63d8-47c8-9a4c-21ca3d3ab91f" />
+<img width="1890" height="925" alt="Screenshot 2026-10-31 144556" src="https://github.com/user-attachments/assets/3464f857-7eda-41d8-a2ab-224f3108ad9d" />
+<img width="1897" height="916" alt="Screenshot 2026-10-31 144730" src="https://github.com/user-attachments/assets/a8afd231-b9c8-4cb5-9c38-014308890168" />
+
+
 
 ## ⚙️ Key Technical Implementations
 
